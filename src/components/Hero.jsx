@@ -1,4 +1,5 @@
 import 'boxicons/css/boxicons.min.css';
+import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
   return (
@@ -13,28 +14,31 @@ const Hero = () => {
                 </div>
             </div>
 
-        {/* main heading */}
-        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider my-8'>
-            Email For
-            <br/>
-            Developers
-        </h1>
+            {/* main heading */}
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider my-8'>
+                Email For
+                <br/>
+                Developers
+            </h1>
 
-        {/* description */}
-        <p className='text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]'>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, soluta hic voluptatum illo architecto non nulla nesciunt dolor pariatur facilis?
-        </p>
+            {/* description */}
+            <p className='text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, soluta hic voluptatum illo architecto non nulla nesciunt dolor pariatur facilis?
+            </p>
 
-        {/* buttons */}
-        <div className='flex gap-4 mt-12'>
-            <a className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]' href="#">
-                Documentation<i class='bx bx-link-external'></i>
-            </a>
-            <a className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white' href="#">
-                GetStarted<i class='bx bx-link-external'></i>
-            </a>
+            {/* buttons */}
+            <div className='flex gap-4 mt-12'>
+                <a className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]' href="#">
+                    Documentation<i class='bx bx-link-external'></i>
+                </a>
+                <a className='border border-[#2a2a2a] py-2 sm:py-3 px-8 sm:px-10 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] bg-gray-300 text-black hover:text-white' href="#">
+                    GetStarted<i class='bx bx-link-external'></i>
+                </a>
+            </div>
         </div>
-        </div>
+
+        {/* 3D Robot */}
+         <Spline scene="https://prod.spline.design/GKobT7MC2LQlIRGz/scene.splinecode" />
     </main>
   )
 }
